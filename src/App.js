@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TestStateHook from './TestStateHook';
+import TestEffectHook from './TestEffectHook';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <TestEffectHook />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -19,6 +22,10 @@ class App extends Component {
           >
             Learn React
           </a>
+
+          <TestStateHook
+            defaultName="Mathew"
+          />
         </header>
       </div>
     );
